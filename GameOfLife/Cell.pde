@@ -16,6 +16,8 @@ class Cell{
         fill(colors[visitHistory]);
       }else{fill(colors[colors.length-1]);}
       rect(i%cellsX*cellSize,i/cellsX*cellSize,cellSize,cellSize,cellSize/3);
+      fill(255);
+      circle(i%cellsX*cellSize+cellSize/2,i/cellsX*cellSize+cellSize/2,cellSize/2);
       visitHistory++;
       
     }else{
